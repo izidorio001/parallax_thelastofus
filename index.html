@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <img src="jackson.png" id="bg">
+            <img src="ellie.png" id="ellie">
+            <h2 id="text">The Last Of Us</h2>
+        </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let ellie = document.getElementById("ellie");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                ellie.style.bottom = value * 0.5 + 'px';
+                text.style.top = value * 0.8 + 'px';
+            })
+        </script>
+    </body>
+</html>
